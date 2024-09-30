@@ -1,0 +1,14 @@
+BESU_MIN_GAS_PRICE=0
+
+enode://9473ee349879a3240a19b4bc8cf3286a0dfa9bdbfd41340709d182acccb3d26f4bc63f99aebc080e6b70169b20f605da740059d1a09d683fb6aa8662ac75e2bf@127.0.0.1:30303
+BESU_MIN_GAS_PRICE=0
+besu --data-path=data --genesis-file=../genesis.json --rpc-http-enabled --rpc-http-api=ETH,NET,QBFT,ADMIN,MINER --host-allowlist="*" --min-gas-price=0 --rpc-http-cors-origins="all"
+
+BESU_MIN_GAS_PRICE=0
+besu --data-path=data --genesis-file=../genesis.json --bootnodes=enode://9473ee349879a3240a19b4bc8cf3286a0dfa9bdbfd41340709d182acccb3d26f4bc63f99aebc080e6b70169b20f605da740059d1a09d683fb6aa8662ac75e2bf@127.0.0.1:30303 --p2p-port=30304 --rpc-http-enabled --rpc-http-api=ETH,NET,QBFT --host-allowlist="*" --min-gas-price=0 --rpc-http-cors-origins="all" --rpc-http-port=8546
+
+BESU_MIN_GAS_PRICE=0
+besu --data-path=data --genesis-file=../genesis.json --bootnodes=enode://9473ee349879a3240a19b4bc8cf3286a0dfa9bdbfd41340709d182acccb3d26f4bc63f99aebc080e6b70169b20f605da740059d1a09d683fb6aa8662ac75e2bf@127.0.0.1:30303 --p2p-port=30305 --rpc-http-enabled --rpc-http-api=ETH,NET,QBFT --host-allowlist="*" --min-gas-price=0 --rpc-http-cors-origins="all" --rpc-http-port=8547
+
+BESU_MIN_GAS_PRICE=0
+besu --data-path=data --genesis-file=../genesis.json --bootnodes=enode://9473ee349879a3240a19b4bc8cf3286a0dfa9bdbfd41340709d182acccb3d26f4bc63f99aebc080e6b70169b20f605da740059d1a09d683fb6aa8662ac75e2bf@127.0.0.1:30303 --p2p-port=30306 --rpc-http-enabled --rpc-http-api=ETH,NET,QBFT --host-allowlist="*" --min-gas-price=0 --rpc-http-cors-origins="all" --rpc-http-port=8548
