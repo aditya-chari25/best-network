@@ -1,0 +1,14 @@
+enode://4f563ecf88c060e693599f1d8577c0c48965419ff36e6d30c41ba9aae76f5e6bd57c4d839fcf20bc7642113392dd4d275d95413924d6212e3a8a4060395938ee@127.0.0.1:30303
+
+besu --data-path=data --genesis-file=../genesis.json --rpc-http-enabled --rpc-http-api=ETH,NET,QBFT --host-allowlist="*" --rpc-http-cors-origins="all"
+
+besu --data-path=data --genesis-file=../genesis.json --bootnodes=enode://4f563ecf88c060e693599f1d8577c0c48965419ff36e6d30c41ba9aae76f5e6bd57c4d839fcf20bc7642113392dd4d275d95413924d6212e3a8a4060395938ee@127.0.0.1:30303 --p2p-port=30304 --rpc-http-enabled --rpc-http-api=ETH,NET,QBFT --host-allowlist="*" --rpc-http-cors-origins="all" --rpc-http-port=8546
+
+besu --data-path=data --genesis-file=../genesis.json --bootnodes=enode://4f563ecf88c060e693599f1d8577c0c48965419ff36e6d30c41ba9aae76f5e6bd57c4d839fcf20bc7642113392dd4d275d95413924d6212e3a8a4060395938ee@127.0.0.1:30303 --p2p-port=30305 --rpc-http-enabled --rpc-http-api=ETH,NET,QBFT --host-allowlist="*" --rpc-http-cors-origins="all" --rpc-http-port=8547
+
+besu --data-path=data --genesis-file=../genesis.json --bootnodes=enode://4f563ecf88c060e693599f1d8577c0c48965419ff36e6d30c41ba9aae76f5e6bd57c4d839fcf20bc7642113392dd4d275d95413924d6212e3a8a4060395938ee@127.0.0.1:30303 --p2p-port=30306 --rpc-http-enabled --rpc-http-api=ETH,NET,QBFT --host-allowlist="*" --rpc-http-cors-origins="all" --rpc-http-port=8548
+
+command:
+"curl -X POST --data '{"jsonrpc":"2.0","method":"eth_sendRawTransaction","params":["0xf86a0180831e84809498d89cc89cef9a8fc3ffc4d6b239dab1968d407188016345785d8a000080820a95a0b39dfdc5108590cb118b997ceb93fb2ba6b64dd46380f7b8a22d276cf03b7f4aa01ede6a375a7f8f3ef1253ba62583ed5d674b18b80756bf0bcc940da65f849ece"],"id":1}' http://127.0.0.1:8545"
+
+{"jsonrpc":"2.0","id":1,"result":"0x53e42dcce5adec4753328a950252c7d420c4f9738b5e9064326e1df55030b949"}
