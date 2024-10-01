@@ -12,3 +12,7 @@ besu --data-path=data --genesis-file=../genesis.json --bootnodes=enode://9473ee3
 
 BESU_MIN_GAS_PRICE=0
 besu --data-path=data --genesis-file=../genesis.json --bootnodes=enode://9473ee349879a3240a19b4bc8cf3286a0dfa9bdbfd41340709d182acccb3d26f4bc63f99aebc080e6b70169b20f605da740059d1a09d683fb6aa8662ac75e2bf@127.0.0.1:30303 --p2p-port=30306 --rpc-http-enabled --rpc-http-api=ETH,NET,QBFT --host-allowlist="*" --min-gas-price=0 --rpc-http-cors-origins="all" --rpc-http-port=8548
+
+0xf86a8064831e84809498d89cc89cef9a8fc3ffc4d6b239dab1968d407188016345785d8a000080820a95a0bfcb190c119368d13c65af536003d4cb371c2b2b07d403b024ea5438fb3b846ca04e63c1c89ba60b5a7d06e2fac0bd0d0263c49db13decac4d88cfc93063afecec
+
+curl -X POST --data '{"jsonrpc":"2.0","method":"eth_sendRawTransaction","params":["0xf86a8064831e84809498d89cc89cef9a8fc3ffc4d6b239dab1968d407188016345785d8a000080820a95a0bfcb190c119368d13c65af536003d4cb371c2b2b07d403b024ea5438fb3b846ca04e63c1c89ba60b5a7d06e2fac0bd0d0263c49db13decac4d88cfc93063afecec"],"id":1}' http://127.0.0.1:8545
