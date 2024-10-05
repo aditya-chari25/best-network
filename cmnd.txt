@@ -1,18 +1,25 @@
-BESU_MIN_GAS_PRICE=0
+
 
 enode://9473ee349879a3240a19b4bc8cf3286a0dfa9bdbfd41340709d182acccb3d26f4bc63f99aebc080e6b70169b20f605da740059d1a09d683fb6aa8662ac75e2bf@127.0.0.1:30303
-BESU_MIN_GAS_PRICE=0
+
+0x1e2fe6e186052ea26a5591952b13c14820fcb9ad
+0xf052409e353182af579df0d3876294243c6fc7ae268399959cb4578780ce2620
 besu --data-path=data --genesis-file=../genesis.json --rpc-http-enabled --rpc-http-api=ETH,NET,QBFT,ADMIN,MINER --host-allowlist="*" --min-gas-price=0 --rpc-http-cors-origins="all"
 
-BESU_MIN_GAS_PRICE=0
+0x98d89cc89cef9a8fc3ffc4d6b239dab1968d4071
+0x83dedf99d1aa82232d2a14c35247ca064fb421a52e8da57167ecd424d8988e89
 besu --data-path=data --genesis-file=../genesis.json --bootnodes=enode://9473ee349879a3240a19b4bc8cf3286a0dfa9bdbfd41340709d182acccb3d26f4bc63f99aebc080e6b70169b20f605da740059d1a09d683fb6aa8662ac75e2bf@127.0.0.1:30303 --p2p-port=30304 --rpc-http-enabled --rpc-http-api=ETH,NET,QBFT --host-allowlist="*" --min-gas-price=0 --rpc-http-cors-origins="all" --rpc-http-port=8546
 
-BESU_MIN_GAS_PRICE=0
+0x7651e89563ff2ebf140858ddcb700a34383710e6
+0xfa1ac38de682bca44e5b11766fca08c1d1bf26d14b9fc44f4b9ebd40432a0884
 besu --data-path=data --genesis-file=../genesis.json --bootnodes=enode://9473ee349879a3240a19b4bc8cf3286a0dfa9bdbfd41340709d182acccb3d26f4bc63f99aebc080e6b70169b20f605da740059d1a09d683fb6aa8662ac75e2bf@127.0.0.1:30303 --p2p-port=30305 --rpc-http-enabled --rpc-http-api=ETH,NET,QBFT --host-allowlist="*" --min-gas-price=0 --rpc-http-cors-origins="all" --rpc-http-port=8547
 
-BESU_MIN_GAS_PRICE=0
+0xaed48ef6a196bbf615d38aabf54186775f23389f
+
 besu --data-path=data --genesis-file=../genesis.json --bootnodes=enode://9473ee349879a3240a19b4bc8cf3286a0dfa9bdbfd41340709d182acccb3d26f4bc63f99aebc080e6b70169b20f605da740059d1a09d683fb6aa8662ac75e2bf@127.0.0.1:30303 --p2p-port=30306 --rpc-http-enabled --rpc-http-api=ETH,NET,QBFT --host-allowlist="*" --min-gas-price=0 --rpc-http-cors-origins="all" --rpc-http-port=8548
 
 0xf86a8064831e84809498d89cc89cef9a8fc3ffc4d6b239dab1968d407188016345785d8a000080820a95a0bfcb190c119368d13c65af536003d4cb371c2b2b07d403b024ea5438fb3b846ca04e63c1c89ba60b5a7d06e2fac0bd0d0263c49db13decac4d88cfc93063afecec
 
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_sendRawTransaction","params":["0xf86a8064831e84809498d89cc89cef9a8fc3ffc4d6b239dab1968d407188016345785d8a000080820a95a0bfcb190c119368d13c65af536003d4cb371c2b2b07d403b024ea5438fb3b846ca04e63c1c89ba60b5a7d06e2fac0bd0d0263c49db13decac4d88cfc93063afecec"],"id":1}' http://127.0.0.1:8545
+curl -X POST --data '{"jsonrpc":"2.0","method":"eth_sendRawTransaction","params":["0xf8860680831e84809425a3db7d1c929c2a9c940f8b98b945ef54d0035780a46057361d0000000000000000000000000000000000000000000000000000000000003039820a96a03c1a90fd3f430df805c6f2104e4dc073682fbfed1574f73c4b11639bfb3604c1a036f6db2ebb0143928b37dccf15e0d2837875edcbf8ef66ca26b0a5679fac6c04"],"id":1}' http://127.0.0.1:8545
+
+{"jsonrpc":"2.0","id":1,"result":"0x446a8e01bb25a1eb94316b3d516fbbd010aaf41f08c149ebf1372dda5c66d1e9"}%                                                         chari@charimac ~ % 
